@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    tools:context=".Cliente">
+
+    <LinearLayout
+        android:id="@+id/llFondo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/cliente_f"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgFondo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llIcono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="¡Bienvenido!"
+                android:textColor="#FFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="¡Es momento de hacer compras!"
+                android:textColor="#FFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgVen"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/frutas" />
+
+                        <TextView
+                            android:id="@+id/txtVen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Frutas"
+                            android:textColor="#FFFF"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:paddingTop="5dp"
+                        android:background="@drawable/border"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgPro"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/verduras" />
+
+                        <TextView
+                            android:id="@+id/txtPro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Verduras"
+                            android:textColor="#FFFF"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgProv"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/carnes" />
+
+                        <TextView
+                            android:id="@+id/txtProv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Carnes"
+                            android:textColor="#FFFF"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgMar"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/mariscos" />
+
+                        <TextView
+                            android:id="@+id/txtMari"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="Mariscos"
+                            android:textColor="#FFFF"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
